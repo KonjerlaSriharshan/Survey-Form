@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Survey Form:</h1>
+        <form class="form-class" name="form" method="POST" action="successful.html">
+            <div class="form-control">
+                    <h3>Customer Name</h3>
+                <div class="field-inputs">
+                    <div class="input-div">
+                        <input type="text" class="form-control-input" id="first-name" name="first name" required>
+                        <div id="first-name-help" class="help-text">Enter Your First Name</div>
+                    </div>
+                <div class="input-div">
+                <input type="text" class="form-control-input" id="last-name" name="last name" required>
+                    <div id="last-name-help" class="help-text">Enter Your Last Name</div>
+                </div>
+            </div>
+            </div>
+            <div class="form-control">
+                <h3>Address</h3>
+            <div class="input-div">
+                <input type="text" class="form-control-input" id="address" name="address" required>
+                <div id="address-help" class="help-text">H.No</div>
+            </div>   
+            </div>
+            <div>
+                <div class="input-div">
+                  <input type="text" class="form-control-input" id="street" name="street" required>
+                  <div id="street-address-help" class="help-text">Street</div>
+                </div>
+            </div>
+            <div class="field-inputs">
+                <div class="input-div">
+                  <input type="text" class="form-control-input" id="city-name" name="city" required>
+                  <div id="city-help" class="help-text">City</div>
+                </div>
+            </div>
+            <div class="field-inputs">
+                <div class="input-div">
+                  <input type="text" class="form-control-input" id="state-name" name="state" required>
+                  <div id="state-help" class="help-text">State</div>
+                </div>
+            </div>
+            <div class="field-inputs">
+                <div class="input-div">
+                  <input type="number" class="form-control-input" id="pin-code" name="pin code" required>
+                  <div id="pin-code-help" class="help-text">Pincode</div>
+                </div>
+            </div>
+            <div class="field-inputs">
+                <div class="input-div">
+                  <input type="text" class="form-control-input" id="country" name="country" required>
+                  <div id="country-help" class="help-text">Country</div>
+                </div>
+            </div>
+            <div class="form-control">
+                <h3>Contact</h3>
+            </div>
+            <div class="field-inputs">
+                <div class="input-div">
+                    <input type="number" class="form-control-input" id="phone no" name="contact" required>
+                    <div id="tel-name-help" class="help-text">Phone</div>
+                </div>
+                <div class="input-div">
+                    <input type="email" class="form-control-input" id="email" name="email" required>
+                    <div id="last-name-help" class="help-text">Email</div>
+                </div>
+            </div>
+            <div id="form-control">
+                <h3>Personal Details</h3>
+                <div class="field-inputs">
+                    <div class="input-div">
+                        <input type="radio" id="male" name="gender" value="male" required>Male
+                        <br>
+                        <input type="radio" id="female" name="gender" value="female" required>Female
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <h3>Ratings</h3>
+                <div class="field-inputs" style="margin:0.5rem 0px;">
+                  <h4>Sanitation:</h4>
+                  <div class="input-div" style="display: flex; gap:10px; ">
+                    <input type="radio" id="bad" name="rating1" value="bad" required>
+                        <label for="bad">Bad</label><br>
+                    <input type="radio" id="good" name="rating1" value="good" required>
+                        <label for="good">Good</label><br>
+                    <input type="radio" id="excellent" name="rating1" value="excellent" required>
+                        <label for="excelent">Excellent</label><br>
+                  </div>
+                </div>
+                <div class="field-inputs" style="margin:0.5rem 0px ;">
+                  <h5>Water facility:</h5>
+                  <div class="input-div" style="display: flex; gap:10px;" >
+                    <input type="radio" id="bad2" name="rating2" value="bad" required>
+                        <label for="bad2">Bad</label><br>
+                    <input type="radio" id="good2" name="rating2" value="good" required>
+                        <label for="good2">Good</label><br>
+                    <input type="radio" id="excellent2" name="rating2" value="excellent" required>
+                        <label for="excelent2">Excellent</label><br>
+                  </div>
+                </div>
+                <div class="field-inputs" style="margin:0.5rem 0px ;">
+                  <h5>Electricity:</h5>
+                  <div class="input-div" style="display: flex; gap:10px;">
+                    <input type="radio" id="bad3" name="rating3" value="bad" required>
+                        <label for="bad3">Bad</label><br>
+                    <input type="radio" id="good3" name="rating3" value="good" required>
+                        <label for="good3">Good</label><br>
+                    <input type="radio" id="excellent3" name="rating3" value="excellent" required>
+                        <label for="excelent3">Excellent</label><br>
+                  </div>
+                </div>
+                <div class="field-inputs" style="margin:0.5rem 0px ;">
+                  <h5>Garbage cleaning:</h5>
+                  <div class="input-div" style="display: flex; gap:10px;">
+                    <input type="radio" id="bad4" name="rating4" value="bad" required>
+                    <label for="bad">Bad</label><br>
+                    <input type="radio" id="good4" name="rating4" value="good" required>
+                    <label for="good4">Good</label><br>
+                    <input type="radio" id="excellent4" name="rating4" value="excellent" required>
+                    <label for="excellent4">Excellent</label><br>
+                  </div>
+                </div>
+                <label for="Street review">Suggestions:</label>
+                    <textarea id="streetreview" name="w3review" rows="4" cols="50"></textarea>
+              <button type="submit"> Submit </button>
+        </form>
+    </div>
+</body>
+</html>
